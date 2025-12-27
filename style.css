@@ -61,17 +61,27 @@ body {
 }
 
 .toDoAdd {
-    margin-top: 40px;
+    margin-top: 80px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    width: 400px;
     gap: 20px;
 }
 
 .toDoName {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: 1px solid rgba(29, 29, 29, 0.1);
+    border-radius: 4px;
+}
+
+.toDoInfo {
+    font-size: 1rem;
     padding: 4px 20px;
     border: 1px solid rgba(29, 29, 29, 0.1);
     border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 120px;
 }
 
 .toDoSubmit {
