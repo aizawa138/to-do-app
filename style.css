@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(248, 248, 255);
+}
+
+.toDoComponents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+.toDoCard {
+    background-color: white;
+    display: flex;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    border: 1px solid rgba(29, 29, 29, 0.1);
+    padding: 10px 30px;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toDoCard:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.toDoTitle {
+    font-weight: bold;
+    font-size: 1.3rem
+}
+
+.toDoDescription {
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+    width: 370px;
+}
+
+.toDoTimePositive {
+    color: rgb(91, 201, 91);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toDoTimeNegative {
+    color: red;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toDoAdd {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.toDoName {
+    font-size: 1.3rem;
+    padding: 4px 20px;
+    border: 1px solid rgba(29, 29, 29, 0.1);
+    border-radius: 4px;
+}
+
+.toDoSubmit {
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(142, 142, 219);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toDoSubmit:hover {
+    background-color: rgb(117, 117, 182);
+}

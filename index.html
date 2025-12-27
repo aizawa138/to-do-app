@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="toDoComponents">
+        <h1 class="toDoHeader">ToDo List</h1>
+        <div class="toDoCard">
+            <div style="border-right: 1px solid rgba(29, 29, 29, 0.1);">
+                <p class="toDoTitle">Push to GitHub</p>
+                <p class="toDoDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <span class="toDoTimePositive">00:00:00</span>
+            </div>
+        </div>
+
+        <div class="toDoAdd">
+            <input type="text" class="toDoName" placeholder="Enter a task">
+            <button type="submit" class="toDoSubmit">Add task</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
