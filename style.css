@@ -97,3 +97,13 @@ body {
 .toDoSubmit:hover {
     background-color: rgb(117, 117, 182);
 }
+
+.toDoTimeLabel {
+    font-size: 1.1rem;
+}
+
+.toDoTime {
+    font-size: 1rem;
+    border: 1px solid rgba(29, 29, 29, 0.1);
+    border-radius: 4px;
+}
