@@ -10,6 +10,6 @@ The user enters the name, description and the time to finish the task. When the 
 - Vanilla JavaScript
 
 # Application image
-![Home](.env/Screenshot%202025-12-28%20171051.png)
+<img width="1533" height="851" alt="Screenshot 2025-12-28 171051" src="https://github.com/user-attachments/assets/1ee4d462-0fbd-4908-af21-d1da3dfe64c0" />
 
-![ToDo_List](.env/Screenshot%202025-12-28%20172333.png)
+<img width="1524" height="855" alt="Screenshot 2025-12-28 172333" src="https://github.com/user-attachments/assets/0693083c-32ba-4775-a55c-7f08164cedf7" />
