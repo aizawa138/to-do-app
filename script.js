@@ -57,6 +57,10 @@ function addTask() {
             element: toDoTimePositive,
             parentContainer: container
         })
+
+        toDoName.value = "";
+        toDoInfo.value = "";
+        toDoTime.value = "";
     }
 
 }
@@ -113,25 +117,30 @@ function countTime() {
 
     const now = new Date();
     toDoItems.sort((a, b) => b.deadline - a.deadline);
-    console.log(toDoItems);
 
     toDoItems.forEach((item) => {
 
         const diff = item.deadline - now;
 
-        let msDiff = Math.floor(diff / 1000);
+        if (diff < 0) {
+            item.element.textContent = "00:00:00";
+            item.element.classList.add("toDoTimeNegative");
+        }
+        else {
+            let msDiff = Math.floor(diff / 1000);
 
-        const hours = String(Math.floor(msDiff / 3600)).padStart(2, "0");
-        msDiff %= 3600;
+            const hours = String(Math.floor(msDiff / 3600)).padStart(2, "0");
+            msDiff %= 3600;
 
-        const minutes = String(Math.floor(msDiff / 60)).padStart(2, "0");
-        const seconds = String(msDiff % 60).padStart(2, "0");
+            const minutes = String(Math.floor(msDiff / 60)).padStart(2, "0");
+            const seconds = String(msDiff % 60).padStart(2, "0");
 
-        const time = [hours, minutes, seconds];
+            const time = [hours, minutes, seconds];
 
-        item.element.textContent = `${time[0]}:${time[1]}:${time[2]}`;
+            item.element.textContent = `${time[0]}:${time[1]}:${time[2]}`;
 
-        toDoHeader.insertAdjacentElement("afterend", item.parentContainer);
+            toDoHeader.insertAdjacentElement("afterend", item.parentContainer);
+        }
     })
 
 }

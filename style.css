@@ -110,6 +110,7 @@ body {
 }
 
 .divDivider {
+    margin-right: 20px;
     border-right: 1px solid rgba(29, 29, 29, 0.1);
 }
 
