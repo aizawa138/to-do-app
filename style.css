@@ -27,6 +27,7 @@ body {
     width: 500px;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
 
 .toDoCard:hover {
@@ -106,4 +107,20 @@ body {
     font-size: 1rem;
     border: 1px solid rgba(29, 29, 29, 0.1);
     border-radius: 4px;
+}
+
+.divDivider {
+    border-right: 1px solid rgba(29, 29, 29, 0.1);
+}
+
+.warningMessage {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(231, 124, 124);
+    text-align: center;
+    display: none;
+}
+
+.toDoHeader {
+    margin-bottom: 30px;
 }
